@@ -1,0 +1,132 @@
+ ****** HSPICE -- H-2013.03-SP2 64-BIT (Aug 26 2013) win64 ******               
+  Copyright (C) 2013 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: inverter.sp                                                       
+  Command line options: -i inverter.sp -o inverter.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   iman                 HOSTNAME: DESKTOP-QCMARDT 
+  lic: HOSTID: "8c89a5095ae6 00ffb396c3c5 0cd292461edc 0cd292461edd 0ed292461edd
+  0ed292461edc" PID:  
+  lic: Using FLEXlm license file: 
+  lic: C:\hspice_lic\synopsys.dat 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid "8c89a5095ae6 00ffb396c3c5 0cd292461edc 0cd
+ 292461edd 0ed292461ed
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_H-2013.03-SP2\meta.cfg
+  **info** (inverter.sp:16) DC voltage reset to initial transient source value              in source        0:v_in                new dc=  0.0000D+00
+ **warning**(nmos:m_n)Warning:  Acde = 0.27944 may be too small in BSIM4 model with w=9e-008 l=4.5e-008.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- H-2013.03-SP2 64-BIT (Aug 26 2013) win64 ******               
+ ******  
+ inverter
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   0.      0:out     = 999.9625m 0:vdd     =   1.0000 
+
+
+ **** voltage sources
+
+ subckt                        
+ element  0:v_1      0:v_in    
+  volts      1.0000     0.     
+  current   -7.2927n  302.6119p
+  power      7.2927n    0.     
+
+     total voltage source power dissipation=    7.2927n       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt                        
+ element  0:m_p      0:m_n     
+ model    0:pmos     0:nmos    
+ region       Linear     Cutoff
+  id        -7.2867n    6.9891n
+  ibs     -3.351e-25  9.487e-25
+  ibd       52.1120a   -1.0100p
+  vgs       -1.0000     0.     
+  vds      -37.5191u  999.9625m
+  vbs        0.         0.     
+  vth     -414.0518m  309.9475m
+  vdsat   -436.2146m   37.2081m
+  vod     -585.9482m -309.9475m
+  beta     408.3188u    3.8892m
+  gam eff  488.0000m  528.0000m
+  gm         8.1813n  166.4163n
+  gds      194.2056u   28.3267n
+  gmb        3.4133n   54.6790n
+  cdtot    258.9379a   56.3582a
+  cgtot    246.7410a   62.8818a
+  cstot    237.0778a  103.8680a
+  cbtot    252.8747a  117.9401a
+  cgs      141.3156a   32.0132a
+  cgd      104.8813a   20.5717a
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- H-2013.03-SP2 64-BIT (Aug 26 2013) win64 ******               
+ ******  
+ inverter
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      12 # elements   =       5
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       2 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           4
+  transient          0.01         151         205          90 rev=         7
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         40.59 megabytes
+           total cpu time            0.03 seconds
+           total elapsed time        0.08 seconds
+           job started at     14:28:33 10/30/2017
+           job ended   at     14:28:33 10/30/2017
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.04(s)
