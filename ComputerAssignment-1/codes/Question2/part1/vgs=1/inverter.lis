@@ -1,0 +1,240 @@
+ ****** HSPICE -- H-2013.03-SP2 64-BIT (Aug 26 2013) win64 ******               
+  Copyright (C) 2013 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: inverter.sp                                                       
+  Command line options: -i inverter.sp -o inverter.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   iman                 HOSTNAME: DESKTOP-QCMARDT 
+  lic: HOSTID: "8c89a5095ae6 00ffb396c3c5 0cd292461edc 0cd292461edd 0ed292461edd
+  0ed292461edc" PID:  
+  lic: Using FLEXlm license file: 
+  lic: C:\hspice_lic\synopsys.dat 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid "8c89a5095ae6 00ffb396c3c5 0cd292461edc 0cd
+ 292461edd 0ed292461ed
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_H-2013.03-SP2\meta.cfg
+ **warning**(nmos:m_n)Warning:  Acde = 0.27944 may be too small in BSIM4 model with w=1e-006 l=1e-007.
+  
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+ ******  
+ inverter
+
+  ******  dc transfer curves tnom=  25.000 temp=  25.000 *****
+x
+
+        volt        ids    
+                           
+    0.           21.4804n  
+   10.00000m     22.5053u  
+   20.00000m     44.4573u  
+   30.00000m     65.8363u  
+   40.00000m     86.6443u  
+   50.00000m    106.8834u  
+   60.00000m    126.5557u  
+   70.00000m    145.6630u  
+   80.00000m    164.2074u  
+   90.00000m    182.1909u  
+  100.00000m    199.6152u  
+  110.00000m    216.4821u  
+  120.00000m    232.7932u  
+  130.00000m    248.5502u  
+  140.00000m    263.7543u  
+  150.00000m    278.4067u  
+  160.00000m    292.5086u  
+  170.00000m    306.0607u  
+  180.00000m    319.0637u  
+  190.00000m    331.5179u  
+  200.00000m    343.4235u  
+  210.00000m    354.7806u  
+  220.00000m    365.5889u  
+  230.00000m    375.8480u  
+  240.00000m    385.5577u  
+  250.00000m    394.7177u  
+  260.00000m    403.3283u  
+  270.00000m    411.3906u  
+  280.00000m    418.9067u  
+  290.00000m    425.8810u  
+  300.00000m    432.3201u  
+  310.00000m    438.2341u  
+  320.00000m    443.6374u  
+  330.00000m    448.5487u  
+  340.00000m    452.9917u  
+  350.00000m    456.9947u  
+  360.00000m    460.5898u  
+  370.00000m    463.8118u  
+  380.00000m    466.6970u  
+  390.00000m    469.2814u  
+  400.00000m    471.5999u  
+  410.00000m    473.6852u  
+  420.00000m    475.5671u  
+  430.00000m    477.2724u  
+  440.00000m    478.8245u  
+  450.00000m    480.2440u  
+  460.00000m    481.5488u  
+  470.00000m    482.7539u  
+  480.00000m    483.8724u  
+  490.00000m    484.9155u  
+  500.00000m    485.8927u  
+  510.00000m    486.8121u  
+  520.00000m    487.6806u  
+  530.00000m    488.5043u  
+  540.00000m    489.2882u  
+  550.00000m    490.0367u  
+  560.00000m    490.7537u  
+  570.00000m    491.4425u  
+  580.00000m    492.1058u  
+  590.00000m    492.7463u  
+  600.00000m    493.3662u  
+  610.00000m    493.9673u  
+  620.00000m    494.5514u  
+  630.00000m    495.1199u  
+  640.00000m    495.6742u  
+  650.00000m    496.2155u  
+  660.00000m    496.7449u  
+  670.00000m    497.2632u  
+  680.00000m    497.7713u  
+  690.00000m    498.2699u  
+  700.00000m    498.7599u  
+  710.00000m    499.2417u  
+  720.00000m    499.7159u  
+  730.00000m    500.1831u  
+  740.00000m    500.6437u  
+  750.00000m    501.0981u  
+  760.00000m    501.5467u  
+  770.00000m    501.9898u  
+  780.00000m    502.4278u  
+  790.00000m    502.8610u  
+  800.00000m    503.2896u  
+  810.00000m    503.7139u  
+  820.00000m    504.1342u  
+  830.00000m    504.5506u  
+  840.00000m    504.9633u  
+  850.00000m    505.3725u  
+  860.00000m    505.7784u  
+  870.00000m    506.1812u  
+  880.00000m    506.5811u  
+  890.00000m    506.9780u  
+  900.00000m    507.3723u  
+  910.00000m    507.7640u  
+  920.00000m    508.1532u  
+  930.00000m    508.5401u  
+  940.00000m    508.9247u  
+  950.00000m    509.3073u  
+  960.00000m    509.6878u  
+  970.00000m    510.0664u  
+  980.00000m    510.4432u  
+  990.00000m    510.8183u  
+    1.00000     511.1918u  
+y
+1****** HSPICE -- H-2013.03-SP2 64-BIT (Aug 26 2013) win64 ******               
+ ******  
+ inverter
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage
+
+ +0:vds     =   0.      0:vgs     =   1.0000 
+
+
+ **** voltage sources
+
+ subckt                        
+ element  0:vds      0:vgs     
+  volts      0.         1.0000 
+  current   21.4804n  -42.9668n
+  power      0.        42.9668n
+
+     total voltage source power dissipation=   42.9668n       watts
+
+
+
+
+ **** mosfets
+
+
+ subckt             
+ element  0:m_n     
+ model    0:nmos    
+ region       Linear
+  id         0.     
+  ibs      1.141e-23
+  ibd      1.581e-23
+  vgs        1.0000 
+  vds        0.     
+  vbs        0.     
+  vth      470.8418m
+  vdsat    349.6048m
+  vod      529.1582m
+  beta       7.2823m
+  gam eff  528.0000m
+  gm         0.     
+  gds        2.2815m
+  gmb        0.     
+  cdtot      2.5224f
+  cgtot      2.7574f
+  cstot      1.6831f
+  cbtot      1.8162f
+  cgs        1.4394f
+  cgd        1.3470f
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- H-2013.03-SP2 64-BIT (Aug 26 2013) win64 ******               
+ ******  
+ inverter
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       7 # elements   =       3
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       1 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1           4
+  dc sweep           0.00         101         204
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         40.59 megabytes
+           total cpu time            0.03 seconds
+           total elapsed time        0.09 seconds
+           job started at     22:23:54 10/30/2017
+           job ended   at     22:23:54 10/30/2017
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.05(s)
